@@ -176,5 +176,17 @@ header{
     width: 150px;
     height: 150px;
     padding: 20px;
+    font-weight: 600;
  
+}
+.award-number{
+    font-size: 2.81rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #424242;
+    
+}
+.award-name{
+    color: #727272;
+  
 }

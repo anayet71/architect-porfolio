@@ -44,3 +44,33 @@ header{
     font-weight:500 ;
     color: black;
 }
+.brand-title{
+    font-size: 64;
+    text-align: center;
+}
+.brand-details{
+    color: #727272;
+    text-align: center;
+
+}
+.btn-container{
+    text-align: center;
+}
+.primary-btn  {   
+    border-radius: 8px;
+    padding: 20px 25px;
+    border: none;
+    background-color: #FF900E;
+    margin-bottom: 50px;
+}
+.primary-btn a{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+.banner-img{
+    width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}

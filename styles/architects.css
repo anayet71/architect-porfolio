@@ -14,6 +14,10 @@
 .display-flex{
     display: flex;
 }
+.span-2{
+    font-weight: 800;
+    font-size: 2.81rem;
+}
 /* Header */
 header{
     background-color: rgb(255, 144, 14, 10%);
@@ -74,12 +78,7 @@ header{
     margin: 0 auto;
     padding-bottom: 45px;
 }
-/* Responsive media query */
-@media screen and (max-width:576px) {
-    .navbar, .nav-items{
-        flex-direction: column;       
-    }
-}
+
 
 
 /* Header end */
@@ -130,17 +129,6 @@ header{
     margin-top: 35px;
    
 }
-
-/* Quick features Responsive */
-@media screen and (max-width:576px) {
-   .quick-features{
-    flex-direction: column;
-} 
-.quick-features-img{
-    grid-template-columns: none;
-}
-}
-
 /* Lovely features */
 .lovely-features{
     display: flex;
@@ -164,7 +152,8 @@ header{
     margin-bottom: 100px;
 }
 .facts-award{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap:124px;
     width: 90%;
     margin: 0 auto;
@@ -189,4 +178,30 @@ header{
 .award-name{
     color: #727272;
   
+}
+/* Our sponsor */
+.our-sponsors{
+    text-align: center;
+    margin-top: 180px;
+}
+.sponsor-company{
+    display: flex;
+    justify-content: space-evenly;
+    filter: grayscale(100%);
+    margin-top: 50px;
+    margin-bottom: 130px;
+
+
+}
+/* Responsive media query */
+@media screen and (max-width:576px) {
+    .navbar, .nav-items, .quick-features{
+        flex-direction: column;       
+    } 
+    .quick-features-img, .facts-award{
+        grid-template-columns: 1fr;
+    }
+    .facts-award{
+        gap: 20px;
+    }
 }

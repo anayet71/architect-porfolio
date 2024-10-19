@@ -185,13 +185,11 @@ header{
     margin-top: 180px;
 }
 .sponsor-company{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     filter: grayscale(100%);
     margin-top: 50px;
     margin-bottom: 130px;
-
-
 }
 /* Responsive media query */
 @media screen and (max-width:576px) {
@@ -200,6 +198,11 @@ header{
     } 
     .quick-features-img, .facts-award{
         grid-template-columns: 1fr;
+    }
+    .sponsor-company{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+       padding-left: 100px;
     }
     .facts-award{
         gap: 20px;

@@ -77,8 +77,7 @@ header{
 /* Responsive media query */
 @media screen and (max-width:576px) {
     .navbar, .nav-items{
-        flex-direction: column;
-        
+        flex-direction: column;       
     }
 }
 
@@ -87,8 +86,7 @@ header{
 
 /* Main  */
 .container{
-    display: none;
-    width: 1318px;
+    max-width: 1318px;
     margin: 0 auto;
 }
 .quick-features{
@@ -101,6 +99,7 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+  
 }
 .quick-features-title .span-1{
     font-size: 2.81rem;
@@ -122,4 +121,14 @@ header{
     font-weight: 600;
     font-size: 1.25rem;
    
+}
+
+/* Quick features Responsive */
+@media screen and (max-width:576px) {
+   .quick-features{
+    flex-direction: column;
+} 
+.quick-features-img{
+    grid-template-columns: none;
+}
 }

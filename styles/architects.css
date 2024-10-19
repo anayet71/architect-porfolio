@@ -74,3 +74,44 @@ header{
     margin: 0 auto;
     padding-bottom: 45px;
 }
+/* Header end */
+
+/* Main  */
+.container{
+    width: 1318px;
+    margin: 0 auto;
+}
+.quick-features{
+    display: flex;
+    gap: 73px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+}
+.quick-features-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.quick-features-title .span-1{
+    color: #727272;
+    font-size: 45px;
+    font-weight: 500;
+
+}
+.quick-features-title .span-2{
+    font-weight: 800;
+    font-size: 45px;
+    
+}
+.quick-features-title .span-3{
+    font-weight: 800;
+    color: #FF900E;
+    font-size: 45px;
+}
+.quick-features-text .primary-btn{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+   
+}

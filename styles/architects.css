@@ -191,6 +191,15 @@ header{
     margin-top: 50px;
     margin-bottom: 130px;
 }
+/* Footer */
+.footer{
+    background-color: rgb(255, 144, 14, 10%);
+    width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+    font-size: 1.25rem;
+}
 /* Responsive media query */
 @media screen and (max-width:576px) {
     .navbar, .nav-items, .quick-features{
@@ -206,5 +215,9 @@ header{
     }
     .facts-award{
         gap: 20px;
+    }
+    .footer{
+        width: 412px;
+        font-size: 1rem;
     }
 }

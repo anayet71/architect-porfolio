@@ -86,20 +86,27 @@ header{
 
 /* Main  */
 .container{
-    max-width: 1318px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .quick-features{
     gap: 73px;
-    justify-content: center;
     align-items: center;
     margin-top: 85px;
+    margin-bottom: 39px;
 }
 .quick-features-img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    
   
+}
+.quick-features-text{
+    max-width: 537px;
+}
+.quick-features-title{
+    margin-bottom: 25px;
 }
 .quick-features-title .span-1{
     font-size: 2.81rem;
@@ -120,6 +127,7 @@ header{
     color: white;
     font-weight: 600;
     font-size: 1.25rem;
+    margin-top: 35px;
    
 }
 
@@ -131,4 +139,42 @@ header{
 .quick-features-img{
     grid-template-columns: none;
 }
+}
+
+/* Lovely features */
+.lovely-features{
+    display: flex;
+    margin-top: 130px;
+    margin-bottom:130px ;
+}
+.lovely-features .span-2{
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+    font-size: 2.81em;
+}
+.lovely-features-items{
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 8%);
+    padding: 30px;
+    border-radius: 5px;
+    
+}
+
+/* Facts */
+.facts-container .text-details{ 
+    margin-bottom: 100px;
+}
+.facts-award{
+    display: flex;
+    gap:124px;
+    width: 90%;
+    margin: 0 auto;
+}
+.facts-award-items{
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+ 
 }

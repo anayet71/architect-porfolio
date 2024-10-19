@@ -7,31 +7,34 @@
   font-weight: 400;
   font-style: normal;
 }
+/* Shared Class */
+.text-details{
+    color: #727272;
+}
+.display-flex{
+    display: flex;
+}
 /* Header */
 header{
     background-color: rgb(255, 144, 14, 10%);
-    width: 1920px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 .header-content{
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .navbar{
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0px;
-    padding-top: 0px;
 }
 .brand{
-    font-size: 45px;
+    font-size: 2.8125rem;
     font-weight: bold;
     margin-top: 30px;
  
 }
 .nav-items{
-    display: flex;
     gap: 50px;
     margin-top: 0px;
 }
@@ -44,17 +47,14 @@ header{
     font-weight:500 ;
     color: black;
 }
+/* Banner related styles */
+.banner-content{
+    max-width:840px ;
+    margin: 0 auto;
+    text-align: center;
+}
 .brand-title{
     font-size: 64;
-    text-align: center;
-}
-.brand-details{
-    color: #727272;
-    text-align: center;
-
-}
-.btn-container{
-    text-align: center;
 }
 .primary-btn  {   
     border-radius: 8px;
@@ -69,20 +69,29 @@ header{
     font-size: 20px;
     text-decoration: none;
 }
-.banner-img{
-    width: 1440px;
+.banner-img img{
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 45px;
 }
+/* Responsive media query */
+@media screen and (max-width:576px) {
+    .navbar, .nav-items{
+        flex-direction: column;
+        
+    }
+}
+
+
 /* Header end */
 
 /* Main  */
 .container{
+    display: none;
     width: 1318px;
     margin: 0 auto;
 }
 .quick-features{
-    display: flex;
     gap: 73px;
     justify-content: center;
     align-items: center;
@@ -94,24 +103,23 @@ header{
     gap: 24px;
 }
 .quick-features-title .span-1{
-    color: #727272;
-    font-size: 45px;
+    font-size: 2.81rem;
     font-weight: 500;
 
 }
 .quick-features-title .span-2{
     font-weight: 800;
-    font-size: 45px;
+    font-size: 2.81rem;
     
 }
 .quick-features-title .span-3{
     font-weight: 800;
     color: #FF900E;
-    font-size: 45px;
+    font-size: 2.81rem;
 }
 .quick-features-text .primary-btn{
     color: white;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
    
 }
